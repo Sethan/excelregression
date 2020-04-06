@@ -35,10 +35,8 @@ for row in array.T:
     row[top_down+distances[1]+distances[2]-2:]=last
     array[:,total_row_counter]=row[:-1]
     total_row_counter+=1
-    print(row)
-    break
-"""    
+    
+   
 a[4:,2:]=array
 returnFrame = pd.DataFrame(data=a, index=df.index, columns=df.columns)
 returnFrame.to_excel('out.xlsx', sheet_name='default', index = False)
-"""   
